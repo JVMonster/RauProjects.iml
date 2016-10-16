@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rau.eventator.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+    <!--<LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:orientation="vertical"
+        >-->
+
+    <!--<LinearLayout
+        android:id="@+id/important_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="7dp"
+        android:orientation="vertical">-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/important_pager"
+        style="@style/ViewPagersStyle">
+
+        </android.support.v4.view.ViewPager>
+        <!--<TextView
+            android:id="@+id/div"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            style="?android:attr/listDivider"
+            android:layout_below="@+id/important_pager"/>-->
+
+
+
+   <!-- <LinearLayout
+        android:id="@+id/music_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+    >-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/music_pager"
+            style="@style/ViewPagersStyle"
+            android:layout_below="@+id/important_pager"/>
+
+
+    <!--<LinearLayout
+    android:id="@+id/sport_layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+>-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/sport_pager"
+        style="@style/ViewPagersStyle"
+        android:layout_below="@+id/music_pager"/>
+
+
+<!--    <LinearLayout
+    android:id="@+id/culture_layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+>-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/culture_pager"
+        style="@style/ViewPagersStyle"
+        android:layout_below="@+id/sport_pager"/>
+
+
+   <!-- <LinearLayout
+    android:id="@+id/teach_layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+>-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/teach_pager"
+        style="@style/ViewPagersStyle"
+        android:layout_below="@+id/culture_pager"/>
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>
